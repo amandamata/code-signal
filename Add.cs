@@ -1,5 +1,4 @@
 namespace code_signal;
-
 public static class Add
 {
     public static int solution(int param1, int param2)
