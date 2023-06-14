@@ -24,3 +24,9 @@ int[][] matrix = new int[][]
     new int[] { 2, 1, 3, 10 }
 };
 Console.WriteLine($"MatrixElementsSum = {MatrixElementsSum.solution(matrix)}");
+
+string[] inputArray = { "aba", "aa", "ad", "vcd", "aba" };
+Console.WriteLine($"AllLongestString ");
+string[] returnedArray = AllLongestString.solution(inputArray);
+foreach (string input in returnedArray)
+    Console.WriteLine($"{input}");
