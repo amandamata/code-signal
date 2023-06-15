@@ -30,3 +30,7 @@ Console.WriteLine($"AllLongestString ");
 string[] returnedArray = AllLongestString.solution(inputArray);
 foreach (string input in returnedArray)
     Console.WriteLine($"{input}");
+
+string s1 = "aabcc";
+string s2 = "adcaa";
+Console.WriteLine($"CommonCharacterCount = {CommonCharacterCount.solution(s1, s2)}");
