@@ -44,4 +44,4 @@ int[] sortByHeightArray = SortByHeight.solution(a);
 foreach (int value in sortByHeightArray)
     Console.WriteLine($"{value}");
 
-Console.WriteLine($"ReverseInParentheses = {ReverseInParentheses.solution("foo(bar)baz(blim)")}");
+Console.WriteLine($"ReverseInParentheses = {ReverseInParentheses.solution("foo(bar(baz))blim")}");

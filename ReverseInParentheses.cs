@@ -4,31 +4,30 @@ public static class ReverseInParentheses
 {
     public static string solution(string inputString)
     {
-        // Find the first closing parenthesis
+        // find the first closing parentheses
+        // find the last openning parentheses before que closing parentheses
+        // extract the substring using the closing and openning values
+        // revert
+        // replace the string
+
         int firstClosingParentheses = inputString.IndexOf(')');
 
-        // Base case: if there are no closing parentheses, return the input string
         if (firstClosingParentheses == -1)
             return inputString;
 
-        // Find the last opening parenthesis before the first closing parenthesis
-        int lastOpeningParenthesesBeforeTheFirstClosing = inputString.LastIndexOf('(', firstClosingParentheses);
+        int lastOpeningParentheses = inputString.LastIndexOf('(', firstClosingParentheses);
 
-        // Extract the substring between the parentheses
-        string subString = inputString.Substring(lastOpeningParenthesesBeforeTheFirstClosing + 1, firstClosingParentheses - lastOpeningParenthesesBeforeTheFirstClosing - 1);
+        string subString = inputString.Substring(lastOpeningParentheses + 1, firstClosingParentheses - lastOpeningParentheses - 1);
 
-        // Reverse the substring
-        char[] subArray = subString.ToCharArray();
-        Array.Reverse(subArray);
-        string reversedSubString = new string(subArray);
+        char[] reversedArray = subString.ToArray();
+        Array.Reverse(reversedArray);
+        string reversedSubstring = new string(reversedArray);
 
-        // Replace the substring (including parentheses) with the reversed substring
-        string firstPart = inputString.Substring(0, lastOpeningParenthesesBeforeTheFirstClosing);
-        string secondPart = reversedSubString;
+        string firstPart = inputString.Substring(0, lastOpeningParentheses);
+        string secondPart = reversedSubstring;
         string thirdPart = inputString.Substring(firstClosingParentheses + 1);
-        string newString = $"{firstPart}{secondPart}{thirdPart}";
 
-        // Recursively process the new string
+        string newString = $"{firstPart}{secondPart}{thirdPart}";
         return solution(newString);
     }
 }
