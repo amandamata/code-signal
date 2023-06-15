@@ -36,3 +36,10 @@ string s2 = "adcaa";
 Console.WriteLine($"CommonCharacterCount = {CommonCharacterCount.solution(s1, s2)}");
 
 Console.WriteLine($"IsLucky = {IsLucky.solution(1230)}");
+
+int[] a = { -1, 150, 190, 170, -1, -1, 160, 180 };
+
+Console.WriteLine($"SortByHeight ");
+int[] sortByHeightArray = SortByHeight.solution(a);
+foreach (int value in sortByHeightArray)
+    Console.WriteLine($"{value}");
