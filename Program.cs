@@ -34,3 +34,5 @@ foreach (string input in returnedArray)
 string s1 = "aabcc";
 string s2 = "adcaa";
 Console.WriteLine($"CommonCharacterCount = {CommonCharacterCount.solution(s1, s2)}");
+
+Console.WriteLine($"IsLucky = {IsLucky.solution(1230)}");
