@@ -69,5 +69,32 @@ Console.WriteLine($"FirstDuplicate {FirstDuplicate.solution(firstDuplicateArray)
 string firstNotRepeatingCharacter = "b";
 Console.WriteLine($"FirstNotRepeatingCharacter {FirstNotRepeatingCharacter.solution(firstNotRepeatingCharacter)}");
 // --------------------------------------------------------------------------------------
-Console.WriteLine($"BestAppartmentLocation {BestAppartmentLocation.solution()}");
+// Console.WriteLine($"BestAppartmentLocation {BestAppartmentLocation.solution()}");
+// --------------------------------------------------------------------------------------
+int[][] rotateImageMatrix = new int[][]
+{
+    new int[] { 1, 2, 3 },
+    new int[] { 4, 5, 6 },
+    new int[] { 7, 8, 9 },
+};
+
+for (var i = 0; i < rotateImageMatrix.Length; i++)
+{
+    for (var j = 0; j < rotateImageMatrix.Length; j++)
+    {
+        Console.Write($"{rotateImageMatrix[i][j]} ");
+    }
+    Console.WriteLine("");
+}
+
+Console.WriteLine($"RotateImage ");
+int[][] rotateImageMatrixReturnded = RotateImage.solution(rotateImageMatrix);
+for (var i = 0; i < rotateImageMatrixReturnded.Length; i++)
+{
+    for (var j = 0; j < rotateImageMatrixReturnded.Length; j++)
+    {
+        Console.Write($"{rotateImageMatrixReturnded[i][j]} ");
+    }
+    Console.WriteLine("");
+}
 // --------------------------------------------------------------------------------------
