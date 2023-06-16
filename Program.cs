@@ -98,3 +98,9 @@ for (var i = 0; i < rotateImageMatrixReturnded.Length; i++)
     Console.WriteLine("");
 }
 // --------------------------------------------------------------------------------------
+string[] domains = { "en.wiki.org", "codesignal.com", "happy.net", "code.info" };
+Console.WriteLine($"DomainType ");
+string[] domainsReturned = DomainType.solution(domains);
+foreach (string value in domainsReturned)
+    Console.WriteLine($"{value}");
+// --------------------------------------------------------------------------------------
