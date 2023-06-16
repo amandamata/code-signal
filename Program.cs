@@ -51,3 +51,7 @@ int[] alternatingSumsArray = AlternatingSums.solution(reverseInParenthesesArray)
 foreach (int value in alternatingSumsArray)
     Console.WriteLine($"{value}");
 // --------------------------------------------------------------------------------------
+Console.WriteLine($"MemoaizationExample {MemoaizationExample.Fibonacci(5)} ");
+Console.WriteLine($"MemoaizationExample {MemoaizationExample.Fibonacci(10)} ");
+Console.WriteLine($"MemoaizationExample {MemoaizationExample.Fibonacci(20)} ");
+// --------------------------------------------------------------------------------------
