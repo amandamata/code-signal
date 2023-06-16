@@ -68,3 +68,6 @@ Console.WriteLine($"FirstDuplicate {FirstDuplicate.solution(firstDuplicateArray)
 // --------------------------------------------------------------------------------------
 string firstNotRepeatingCharacter = "b";
 Console.WriteLine($"FirstNotRepeatingCharacter {FirstNotRepeatingCharacter.solution(firstNotRepeatingCharacter)}");
+// --------------------------------------------------------------------------------------
+Console.WriteLine($"BestAppartmentLocation {BestAppartmentLocation.solution()}");
+// --------------------------------------------------------------------------------------
