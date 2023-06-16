@@ -63,3 +63,6 @@ int[][] trainingData = new int[][]
 };
 Console.WriteLine($"CompanyBotStrategy {CompanyBotStrategy.solution(trainingData)}");
 // --------------------------------------------------------------------------------------
+int[] firstDuplicateArray = { 2, 1, 3, 5, 3, 2 };
+Console.WriteLine($"FirstDuplicate {FirstDuplicate.solution(firstDuplicateArray)}");
+// --------------------------------------------------------------------------------------
