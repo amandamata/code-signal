@@ -55,3 +55,11 @@ Console.WriteLine($"MemoaizationExample {MemoaizationExample.Fibonacci(5)} ");
 Console.WriteLine($"MemoaizationExample {MemoaizationExample.Fibonacci(10)} ");
 Console.WriteLine($"MemoaizationExample {MemoaizationExample.Fibonacci(20)} ");
 // --------------------------------------------------------------------------------------
+int[][] trainingData = new int[][]
+{
+    new int[] { 4, -1 },
+    new int[] { 0, 0 },
+    new int[] { 5, -1 },
+};
+Console.WriteLine($"CompanyBotStrategy {CompanyBotStrategy.solution(trainingData)}");
+// --------------------------------------------------------------------------------------
