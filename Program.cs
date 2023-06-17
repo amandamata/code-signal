@@ -104,3 +104,44 @@ string[] domainsReturned = DomainType.solution(domains);
 foreach (string value in domainsReturned)
     Console.WriteLine($"{value}");
 // --------------------------------------------------------------------------------------
+var items = new List<string>() { "Amanda", "Mata" };
+BigOStudies.printFirst(items);
+// -----------------
+BigOStudies.printAll(items);
+// -----------------
+BigOStudies.printBackwards(items);
+// -----------------
+
+int[][] bigOStudiesMatrix = new int[][]
+{
+    new int[] { 1, 1, 1, 0 },
+    new int[] { 0, 5, 0, 1 },
+    new int[] { 2, 1, 3, 10 }
+};
+Console.WriteLine($"BigOStudies {BigOStudies.printMatrix(bigOStudiesMatrix, 10)}");
+// -----------------
+char[] arrayString = { 'a', 'b', 'c', 'd', 'e' };
+Console.WriteLine($"BigOStudies {BigOStudies.findInArrayString(arrayString, 'e')}");
+// -----------------
+arrayString.Order();
+var start = 0;
+var end = arrayString.Length - 1;
+Console.WriteLine($"BigOStudies ");
+BigOStudies.printBinarySearch('e', start, end);
+// -----------------
+BinarySearchTree bst = new BinarySearchTree();
+bst.Insert(50);
+bst.Insert(30);
+bst.Insert(20);
+bst.Insert(40);
+bst.Insert(70);
+bst.Insert(60);
+bst.Insert(80);
+
+Console.WriteLine("In-order traversal:");
+bst.InOrderTraversal();
+
+int searchValue = 40;
+bool found = bst.Search(searchValue);
+Console.WriteLine($"\n\nSearch for {searchValue}: {(found ? "Found" : "Not Found")}");
+// --------------------------------------------------------------------------------------
