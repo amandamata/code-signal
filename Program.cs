@@ -1,4 +1,5 @@
 ﻿using code_signal;
+using static code_signal.RemoveKFromList;
 
 Console.WriteLine($"Add = {Add.solution(1, 2)}");
 // --------------------------------------------------------------------------------------
@@ -145,3 +146,24 @@ int searchValue = 40;
 bool found = bst.Search(searchValue);
 Console.WriteLine($"\n\nSearch for {searchValue}: {(found ? "Found" : "Not Found")}");
 // --------------------------------------------------------------------------------------
+
+ListNode<int> head = new ListNode<int> { value = 3 };
+ListNode<int> node1 = new ListNode<int> { value = 1 };
+ListNode<int> node2 = new ListNode<int> { value = 2 };
+ListNode<int> node3 = new ListNode<int> { value = 3 };
+ListNode<int> node4 = new ListNode<int> { value = 4 };
+ListNode<int> node5 = new ListNode<int> { value = 5 };
+
+head.next = node1;
+node1.next = node2;
+node2.next = node3;
+node3.next = node4;
+node4.next = node5;
+
+Console.WriteLine("RemoveKFromList");
+var currentNode = RemoveKFromList.solution(head, 3); ;
+while (currentNode != null)
+{
+    Console.WriteLine(currentNode.value);
+    currentNode = currentNode.next;
+}
